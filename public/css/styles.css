@@ -1,0 +1,329 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{  
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+header{
+    background-color:#EAC926;
+}
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 16px;
+}
+img{
+    width: 100%;
+}
+nav{
+    padding-bottom: 15px;
+}
+.form{
+    display: flex;
+
+}
+.input{
+    background-color: white;
+    border: solid 1px gray;
+    color: gray;
+    padding: 5px;
+    width: 80%;
+    margin: 5% 1% 5% 5%;
+}
+.submit{
+    background-color:#ebebeb;
+    border:solid 1px gray;
+    border-radius: 5px;
+    width: 30px;
+    height: 10%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5%;
+}
+.slogan{
+    text-align: center;
+    max-width: 80%;
+    font-size: 14px;
+    margin: 5% 0;
+}
+.menu, .descripcion{
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li, .formulario ul li{
+    list-style: none;
+}
+.main-header{
+    padding: 0 1%;
+}
+main{
+    width: 90%;
+    margin: auto;
+}
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.seccion-productos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.logo{
+    max-width: 40%;
+}
+.form{
+    max-width: 50%;
+}
+.productos{
+    margin: 2% 0;
+    background-color: #FFF;
+}
+.detalles{
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.detalles i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 85%;
+    top:-25px;
+   
+}
+.precio{
+    font-size: 18px;
+    margin-right:5%;
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0 2%;
+}
+
+.fa-truck{
+    color: #39b54a;
+    font-size: 1.5em;
+}
+
+.centrado{
+    text-align: center;
+}
+.burger-menu{
+    text-align: center;
+}
+.burger-menu i{
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color:#1259c3;
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    padding: 2%;
+}
+
+
+footer{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    font-size: 12px;
+}
+
+footer i{
+    font-size: 2em;
+    margin-top: 10px;
+    color: #1259c3;
+    transition: color 0.5s;
+}
+.footer-columnas{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+.footer-columnas h4{
+    margin: 10px 0;
+}
+
+.copy{
+    margin: 20px 0;
+    color: gray;
+}
+
+/* Formulario --------------------- */
+.contenedor{
+    margin: auto;
+    width: 90%;
+    padding-top: 5%;
+}
+.formulario{
+    margin: 10px 0;
+}
+.etiquetas{
+    font-weight: 900;
+    
+}
+input[type=text], input[type=password], input[type=date]{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+input[type=radio], input[type=checkbox]{
+    margin: 0 10px;
+}
+/* Botones ----------------- */
+.btnPrincipal{
+    background-color: #1259c3;
+    border: none;
+    color: #FFF;    
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.5s;
+}
+
+.btnSecundario{
+    background-color: #c5c7ca;
+    border: none;
+    color: black;   
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.5s;
+}
+
+@media (min-width: 361px){ /* desktop */
+    .menu{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+     }
+     .productos{
+         transition: box-shadow ease-in 0.5s;
+     }
+    .productos:hover{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .descripcion{
+        display: block;
+        color: gray;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .descripcion:hover{
+        opacity: 1;
+    }
+    .main-header-top-bar{
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        max-width: 20%;
+    }
+    .slogan{
+        text-align: right;
+        max-width: 30%;
+    }
+    .form{
+        flex-grow: 1;
+    }
+    .main-header-bottom-bar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu li { 
+        margin: 0 5px;
+    }
+    .productos{
+        max-width: 45%;
+    }
+    .precio{
+        margin-left: -25px;
+        margin-right:15%;
+    }
+    .descripcion{
+        max-width: 100%;
+    }
+    .detalles .fas.fa-truck{
+       transition:  transform 0.5s;
+    }
+    .detalles .fas.fa-truck:hover{
+        transform: rotate(-90deg);
+    }
+    .btnPrincipal:hover{
+        background-color: #0022AA;
+    }
+    .contenedor2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .parte{
+        width: 48%;
+    }
+    .btnPrincipal, .btnSecundario {
+        width: 48%;
+    }
+    .botones{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+@media (min-width: 768px){
+    .productos{
+        max-width: 22%;
+    }
+    .precio{
+        margin-left: -25px;
+        margin-right:15%;
+    }
+    .descripcion{
+        max-width: 100%;
+    }
+    .footer-columnas{
+        flex-wrap:nowrap;
+    }
+    .colum{
+        margin: 0 10px;
+    }
+    footer i:hover{
+        color: #EAC926;
+    }
+
+
+}
