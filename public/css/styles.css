@@ -66,7 +66,10 @@ nav li, .formulario ul li{
     list-style: none;
 }
 .main-header{
+    position: fixed;
+    top:0px;
     padding: 0 1%;
+    z-index: 2;
 }
 main{
     width: 90%;
@@ -78,6 +81,10 @@ main{
     justify-content: space-around;
     align-items: center;
 }
+.banner{
+    margin-top: 150px;
+}
+
 .seccion-productos{
     display: flex;
     justify-content: space-around;
@@ -85,6 +92,15 @@ main{
 }
 .logo{
     max-width: 40%;
+    animation: aumentar 1s ease-in infinite alternate;
+}
+@keyframes aumentar{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
 }
 .form{
     max-width: 50%;
@@ -178,6 +194,7 @@ footer i{
 /* Formulario --------------------- */
 .contenedor{
     margin: auto;
+    margin-top: 150px;
     width: 90%;
     padding-top: 5%;
 }
@@ -220,7 +237,7 @@ input[type=radio], input[type=checkbox]{
     transition: background-color 0.5s;
 }
 
-@media (min-width: 361px){ /* desktop */
+@media (min-width: 376px){ /* ipad */
     .menu{
         display: block;
     }
@@ -242,6 +259,7 @@ input[type=radio], input[type=checkbox]{
     .descripcion:hover{
         opacity: 1;
     }
+    
     .main-header-top-bar{
         flex-wrap: wrap;
     }
@@ -304,7 +322,16 @@ input[type=radio], input[type=checkbox]{
     }
 
 }
-@media (min-width: 768px){
+@media (min-width: 769px){
+    .main-header{
+        position:static;
+    }
+    .contenedor{
+        margin-top: 0px;
+    }
+    .banner{
+        margin-top:0px;
+    }
     .productos{
         max-width: 22%;
     }
